@@ -10,4 +10,4 @@ test:
   pre:
     - sleep 5
   override:
-    - docker run --rm ekino/newman_circle
+    - docker run ekino/newman_circle
