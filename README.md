@@ -38,4 +38,14 @@ docker run --rm \
   -e /postman/integ.json
 ```
 
+#### Debug
 
+If you want to enter the container to manually start and/or debug newman
+```bash
+docker run --rm -ti \
+  --entrypoint /bin/bash
+  -v /path/to/postman/files:/postman
+  ekino/newman
+```
+
+Then inside the container the `newman` command is in the PATH
