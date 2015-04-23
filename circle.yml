@@ -4,10 +4,10 @@ machine:
 
 dependencies:
   override:
-    - docker build -t ekino/newman .
+    - docker build -t ekino/newman_circle .
 
 test:
   pre:
     - sleep 5
   override:
-    - docker run --rm ekino/newman | grep -C Usage:
+    - docker run --rm ekino/newman_circle
