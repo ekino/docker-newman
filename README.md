@@ -8,12 +8,16 @@ Docker image to easily start [newman](https://github.com/a85/Newman) container
 
 ## Usage
 
+#### Help
+
 Print `newman` help
 ```bash
 docker run --rm ekino/newman
 ```
 
-Start a collection named `collection1` located in `/path/to/postman/files/collection1.json` for environment named `integ`
+#### Start
+
+Start a Postman collection with the Newman container
 ```bash
 # Example usage for this host context
 #

@@ -1,0 +1,13 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t ekino/newman .
+
+test:
+  pre:
+    - sleep 5
+  override:
+    - docker run --rm ekino/newman | grep -C Usage:
